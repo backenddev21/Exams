@@ -8,10 +8,11 @@
     ".NETCoreApp,Version=v5.0": {
       "elevator/1.0.0": {
         "dependencies": {
+          "FluentAssertions": "8.2.0",
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "Moq": "4.20.72",
-          "NUnit": "4.3.2",
-          "NUnit3TestAdapter": "5.0.0"
+          "NUnit": "3.13.3",
+          "NUnit3TestAdapter": "4.3.1"
         },
         "runtime": {
           "elevator.dll": {}
@@ -28,14 +29,11 @@
           }
         }
       },
-      "Microsoft.ApplicationInsights/2.22.0": {
-        "dependencies": {
-          "System.Diagnostics.DiagnosticSource": "5.0.0"
-        },
+      "FluentAssertions/8.2.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
-            "assemblyVersion": "2.22.0.997",
-            "fileVersion": "2.22.0.997"
+          "lib/netstandard2.1/FluentAssertions.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
           }
         }
       },
@@ -54,227 +52,6 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
-      "Microsoft.Testing.Extensions.Telemetry/1.5.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "2.22.0",
-          "Microsoft.Testing.Platform": "1.5.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Testing.Extensions.Telemetry.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.500.325.7706"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/cs/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.0/de/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fr/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/it/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.0/ja/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.0/ko/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.0/pl/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.0/pt-BR/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/ru/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.0/tr/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.0/zh-Hans/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.0/zh-Hant/Microsoft.Testing.Extensions.Telemetry.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.Testing.Extensions.TrxReport.Abstractions/1.5.3": {
-        "dependencies": {
-          "Microsoft.Testing.Platform": "1.5.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Testing.Extensions.TrxReport.Abstractions.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.500.325.7706"
-          }
-        }
-      },
-      "Microsoft.Testing.Extensions.VSTestBridge/1.5.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "2.22.0",
-          "Microsoft.TestPlatform.ObjectModel": "17.13.0",
-          "Microsoft.Testing.Extensions.Telemetry": "1.5.3",
-          "Microsoft.Testing.Extensions.TrxReport.Abstractions": "1.5.3",
-          "Microsoft.Testing.Platform": "1.5.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Testing.Extensions.VSTestBridge.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.500.325.7706"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/cs/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.0/de/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fr/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/it/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.0/ja/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.0/ko/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.0/pl/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.0/pt-BR/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/ru/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.0/tr/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.0/zh-Hans/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.0/zh-Hant/Microsoft.Testing.Extensions.VSTestBridge.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.Testing.Platform/1.5.3": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Testing.Platform.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.500.325.7706"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/cs/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.0/de/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fr/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/it/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.0/ja/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.0/ko/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.0/pl/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.0/pt-BR/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/ru/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.0/tr/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.0/zh-Hans/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.0/zh-Hant/Microsoft.Testing.Platform.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.Testing.Platform.MSBuild/1.5.3": {
-        "dependencies": {
-          "Microsoft.Testing.Platform": "1.5.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Testing.Extensions.MSBuild.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.500.325.7706"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/cs/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.0/de/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fr/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/it/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.0/ja/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.0/ko/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.0/pl/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.0/pt-BR/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/ru/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.0/tr/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.0/zh-Hans/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.0/zh-Hant/Microsoft.Testing.Extensions.MSBuild.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
       "Microsoft.TestPlatform.ObjectModel/17.13.0": {
         "dependencies": {
           "System.Reflection.Metadata": "1.6.0"
@@ -538,6 +315,11 @@
           }
         }
       },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -546,14 +328,18 @@
           }
         }
       },
-      "NUnit/4.3.2": {},
-      "NUnit3TestAdapter/5.0.0": {
+      "NUnit/3.13.3": {
         "dependencies": {
-          "Microsoft.Testing.Extensions.VSTestBridge": "1.5.3",
-          "Microsoft.Testing.Platform.MSBuild": "1.5.3"
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.3.0",
+            "fileVersion": "3.13.3.0"
+          }
         }
       },
-      "System.Diagnostics.DiagnosticSource/5.0.0": {},
+      "NUnit3TestAdapter/4.3.1": {},
       "System.Diagnostics.EventLog/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -598,12 +384,12 @@
       "path": "castle.core/5.1.1",
       "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
-    "Microsoft.ApplicationInsights/2.22.0": {
+    "FluentAssertions/8.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3AOM9bZtku7RQwHyMEY3tQMrHIgjcfRDa6YQpd/QG2LDGvMydSlL9Di+8LLMt7J2RDdfJ7/2jdYv6yHcMJAnNw==",
-      "path": "microsoft.applicationinsights/2.22.0",
-      "hashPath": "microsoft.applicationinsights.2.22.0.nupkg.sha512"
+      "sha512": "sha512-Gh4jkECcrR0i17ofCVqsiVz2+lxC+p5TYFPCrbZFi7eQQWGEZhvCDwvhycBKX1Kmtbd+H2CW/ugW7wdH9Br9NQ==",
+      "path": "fluentassertions/8.2.0",
+      "hashPath": "fluentassertions.8.2.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.13.0": {
       "type": "package",
@@ -625,41 +411,6 @@
       "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
-    },
-    "Microsoft.Testing.Extensions.Telemetry/1.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-U9pGd5DQuX1PfkrdFI+xH34JGgQ2nes5QAwIITTk+MQfLvRITqsZjJeHTjpGWh33D/0q1l7aA8/LQHR7UuCgLQ==",
-      "path": "microsoft.testing.extensions.telemetry/1.5.3",
-      "hashPath": "microsoft.testing.extensions.telemetry.1.5.3.nupkg.sha512"
-    },
-    "Microsoft.Testing.Extensions.TrxReport.Abstractions/1.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-h34zKNpGyni66VH738mRHeXSnf3klSShUdavUWNhSfWICUUi5aXeI0LBvoX/ad93N0+9xBDU3Fyi6WfxrwKQGw==",
-      "path": "microsoft.testing.extensions.trxreport.abstractions/1.5.3",
-      "hashPath": "microsoft.testing.extensions.trxreport.abstractions.1.5.3.nupkg.sha512"
-    },
-    "Microsoft.Testing.Extensions.VSTestBridge/1.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cJD67YfDT98wEWyazKVD/yPVW6+H1usXeuselCnRes7JZBTIYWtrCchcOzOahnmajT79eDKqt9sta7DXwTDU4Q==",
-      "path": "microsoft.testing.extensions.vstestbridge/1.5.3",
-      "hashPath": "microsoft.testing.extensions.vstestbridge.1.5.3.nupkg.sha512"
-    },
-    "Microsoft.Testing.Platform/1.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WqJydnJ99dEKtquR9HwINz104ehWJKTXbQQrydGatlLRw14bmsx0pa8+E6KUXMYXZAimN0swWlDmcJGjjW4TIg==",
-      "path": "microsoft.testing.platform/1.5.3",
-      "hashPath": "microsoft.testing.platform.1.5.3.nupkg.sha512"
-    },
-    "Microsoft.Testing.Platform.MSBuild/1.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bOtpRMSPeT5YLQo+NNY8EtdNTphAUcmALjW4ABU7P0rb6yR2XAZau3TzNieLmR3lRuwudguWzzBhgcLRXwZh0A==",
-      "path": "microsoft.testing.platform.msbuild/1.5.3",
-      "hashPath": "microsoft.testing.platform.msbuild.1.5.3.nupkg.sha512"
     },
     "Microsoft.TestPlatform.ObjectModel/17.13.0": {
       "type": "package",
@@ -689,6 +440,13 @@
       "path": "moq/4.20.72",
       "hashPath": "moq.4.20.72.nupkg.sha512"
     },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
@@ -696,26 +454,19 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "NUnit/4.3.2": {
+    "NUnit/3.13.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-puVXayXNmEu7MFQSUswGmUjOy3M3baprMbkLl5PAutpeDoGTr+jPv33qAYsqxywi2wJCq8l/O3EhHoLulPE1iQ==",
-      "path": "nunit/4.3.2",
-      "hashPath": "nunit.4.3.2.nupkg.sha512"
+      "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
+      "path": "nunit/3.13.3",
+      "hashPath": "nunit.3.13.3.nupkg.sha512"
     },
-    "NUnit3TestAdapter/5.0.0": {
+    "NUnit3TestAdapter/4.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sy4cLoUAdE6TDM4wNX5gmNCyhMev5wUz4cA6ZRf/aON9vf9t4xTVGLj/4huhDKcS4dFfmVVcgcP70yC7WC9kKg==",
-      "path": "nunit3testadapter/5.0.0",
-      "hashPath": "nunit3testadapter.5.0.0.nupkg.sha512"
-    },
-    "System.Diagnostics.DiagnosticSource/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tCQTzPsGZh/A9LhhA6zrqCRV4hOHsK90/G7q3Khxmn6tnB1PuNU0cRaKANP2AWcF9bn0zsuOoZOSrHuJk6oNBA==",
-      "path": "system.diagnostics.diagnosticsource/5.0.0",
-      "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+      "sha512": "sha512-R+bGFtsUpLWywjT1nb3xMmoVa2AIw6ClIGC+XjW9lYE8hwJeos+NdR/mtg4RXbBphmC9epALrnUc6MM7mUG8+Q==",
+      "path": "nunit3testadapter/4.3.1",
+      "hashPath": "nunit3testadapter.4.3.1.nupkg.sha512"
     },
     "System.Diagnostics.EventLog/4.7.0": {
       "type": "package",

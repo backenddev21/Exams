@@ -22,16 +22,16 @@ public class Elevator
         requests.Enqueue(floor);
     }
 
-    // Asynchronous move method simulating the elevator's movement.
+    // method to simulate elevator
     public async Task Move()
     {
         while (requests.Count > 0)
         {
             IsMoving = true;
             int requestedFloor = requests.Dequeue();
-            Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to floor {requestedFloor}.");
-
-            // Simulate movement with a delay
+            Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to {requestedFloor} floor.");
+            Task.Delay(10000).Wait(); 
+            
             while (CurrentFloor != requestedFloor)
             {
                 if (CurrentFloor < requestedFloor)
@@ -40,10 +40,10 @@ public class Elevator
                     CurrentFloor--;
 
                 Console.WriteLine($"Elevator {Id} is at floor {CurrentFloor}");
-                await Task.Delay(500); // Simulating elevator movement delay
+                await Task.Delay(10000); // Simulating elevator movement delay
             }
 
-            Console.WriteLine($"Elevator {Id} has arrived at floor {CurrentFloor}. Waiting for passengers...");
+            Console.WriteLine($"Elevator {Id} arrived at floor {CurrentFloor}.");
             IsMoving = false;
             await Task.Delay(1000); // Simulate passenger interaction time
         }

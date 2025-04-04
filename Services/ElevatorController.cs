@@ -57,7 +57,7 @@ namespace elevator.Services
         {
             Console.WriteLine($"Elevator {nearestElevator.Id} assigned to floor {requestedFloor}.");
             nearestElevator.AddRequest(requestedFloor);
-            nearestElevator.IsMoving = true; // Set the elevator to moving state
+            nearestElevator.IsMoving = true;
         }
         else
         {

@@ -43,18 +43,18 @@ namespace ElevatorTests
             // Arrange
             var controller = new ElevatorController(new List<Elevator>
             {
-                new(3),
-                new(5),
-                new(2)
+                new(1),
+                new(2),
+                new(3)
             });
 
             var output = new StringWriter();
             Console.SetOut(output);
 
             // Act
-            controller.RequestElevator(3);
-            controller.RequestElevator(5);
-            controller.RequestElevator(2);
+            controller.RequestElevator(3, 1, Direction.Up);
+            controller.RequestElevator(4, 6, Direction.Up);
+            controller.RequestElevator(2, 10, Direction.Up);
 
             // Assert
             var consoleOutput = output.ToString();
@@ -82,11 +82,11 @@ namespace ElevatorTests
             Console.SetOut(output);
 
             // Act
-            controller.RequestElevator(10);
-            controller.RequestElevator(10);
-            controller.RequestElevator(10);
-            controller.RequestElevator(10);
-            controller.RequestElevator(5);// this should throw a message no available elevators at the moment
+            controller.RequestElevator(10, 1, Direction.Up);
+            controller.RequestElevator(10, 4, Direction.Up);
+            controller.RequestElevator(10, 3, Direction.Up);
+            controller.RequestElevator(10, 2, Direction.Up);
+            controller.RequestElevator(1, 10, Direction.Up);// this should throw a message no available elevators at the moment
 
             // Assert
             var consoleOutput = output.ToString();

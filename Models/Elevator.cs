@@ -7,45 +7,48 @@ public class Elevator
     public int Id { get; private set; }
     public int CurrentFloor { get; set; }
     public bool IsMoving { get; set; }
-    private Queue<int> requests;
+    public Direction Direction { get; set; } // direction of elevator movement
+    private Queue<int> Requests;
 
-    public Elevator(int id)
+    public Elevator(int id, bool isMoving = false, Direction going = Direction.Up)
     {
         Id = id;
         CurrentFloor = 1;
-        IsMoving = false;
-        requests = new Queue<int>();
+        IsMoving = isMoving;
+        Direction = going;
+        Requests = new Queue<int>(); // Initialize the queue for requests
     }
 
-    public void AddRequest(int floor)
+    public void AddRequest(int toFloor)
     {
-        requests.Enqueue(floor);
+        Requests.Enqueue(toFloor);
     }
 
     // method to simulate elevator
     public async Task Move()
     {
-        while (requests.Count > 0)
+        while (Requests.Count > 0)
         {
             IsMoving = true;
-            int requestedFloor = requests.Dequeue();
-            Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to {requestedFloor} floor.");
-            Task.Delay(10000).Wait(); 
+            int destinationFloor = Requests.Dequeue();
+            Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to {destinationFloor} floor.");
+            Task.Delay(500).Wait(); 
             
-            while (CurrentFloor != requestedFloor)
+            while (CurrentFloor != destinationFloor)
             {
-                if (CurrentFloor < requestedFloor)
+                if (CurrentFloor < destinationFloor)
                     CurrentFloor++;
                 else
                     CurrentFloor--;
 
                 Console.WriteLine($"Elevator {Id} is at floor {CurrentFloor}");
-                await Task.Delay(10000); // Simulating elevator movement delay
+                await Task.Delay(500); // Simulating elevator movement delay
             }
 
-            Console.WriteLine($"Elevator {Id} arrived at floor {CurrentFloor}.");
+            Console.WriteLine($"Elevator {Id} arrived at floor {CurrentFloor}. Passenger can enter or exit");
+            // await Task.Delay(1000); // Simulate passenger interaction time
+            CurrentFloor = destinationFloor; // Set the current floor to the destination floor after arrival
             IsMoving = false;
-            await Task.Delay(1000); // Simulate passenger interaction time
         }
     }
 }

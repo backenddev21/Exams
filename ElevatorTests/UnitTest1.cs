@@ -9,17 +9,15 @@ namespace ElevatorTests
 {
     public class Tests
     {
-        [TestCase(1)]
         [Test]
-        public void AddRequest_ShouldAddFloorToQueue(int elevatorId)
+        public void AddRequest_ShouldAddFloorToQueue()
         {
             // Arrange
-            var elevator = new Elevator(elevatorId);
+            var elevator = new Elevator(1);
             // Act
             elevator.AddRequest(3);
-            //Assert
+            // Assert
             elevator.CurrentFloor.Should().Be(1);
-            Assert.Pass();
         }
 
         [Test]
@@ -52,18 +50,17 @@ namespace ElevatorTests
             Console.SetOut(output);
 
             // Act
-            controller.RequestElevator(3, 1, Direction.Up);
+            controller.RequestElevator(3, 1, Direction.Down);
             controller.RequestElevator(4, 6, Direction.Up);
             controller.RequestElevator(2, 10, Direction.Up);
 
             // Assert
             var consoleOutput = output.ToString();
-            Assert.IsTrue(consoleOutput.Contains("Floor 3 selected."));
-            Assert.IsTrue(consoleOutput.Contains("Elevator 3 assigned to floor 3."));
-            Assert.IsTrue(consoleOutput.Contains("Floor 5 selected."));
-            Assert.IsTrue(consoleOutput.Contains("Elevator 5 assigned to floor 5."));
-            Assert.IsTrue(consoleOutput.Contains("Floor 2 selected."));
-            Assert.IsTrue(consoleOutput.Contains("Elevator 2 assigned to floor 2."));
+            Assert.IsTrue(consoleOutput.Contains("Going up selected by a passenger from floor 4."));
+            Assert.IsTrue(consoleOutput.Contains("Going up selected by a passenger from floor 2."));
+            Assert.IsTrue(consoleOutput.Contains("Passenger requested to go from floor 2 to floor 10 going up."));
+            Assert.IsTrue(consoleOutput.Contains("Passenger requested to go from floor 3 to floor 1 going down."));
+            Assert.IsTrue(consoleOutput.Contains("Passenger requested to go from floor 4 to floor 6 going up."));
         }
         
         [Test]

@@ -81,8 +81,14 @@ namespace elevator.Services
                         minDistance = distanceToFloorAndCurrentFloor;
                         nearestElevator = elevator;
                     } 
-                    //test case from floor 7 to floor 2 and elevator is going down
+                    
                     if (distanceToFloorAndCurrentFloor >= 1 && distanceFromFloorAndCurrentFloor >= 1 && distanceToFloorAndCurrentFloor < minDistance && direction == Direction.Down)
+                    {
+                        minDistance = distanceToFloorAndCurrentFloor;
+                        nearestElevator = elevator;
+                    } 
+
+                    if (distanceToFloorAndCurrentFloor >= 1 && distanceFromFloorAndCurrentFloor >= 1 && distanceToFloorAndCurrentFloor < minDistance && direction == Direction.Up)
                     {
                         minDistance = distanceToFloorAndCurrentFloor;
                         nearestElevator = elevator;

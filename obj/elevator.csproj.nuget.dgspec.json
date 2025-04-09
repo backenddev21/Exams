@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\exams\\emapta\\elevator\\elevator.csproj": {}
+    "D:\\exams\\emapta\\elevator\\elevator.csproj": {}
   },
   "projects": {
-    "d:\\exams\\emapta\\elevator\\elevator.csproj": {
+    "D:\\exams\\emapta\\elevator\\elevator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\exams\\emapta\\elevator\\elevator.csproj",
+        "projectUniqueName": "D:\\exams\\emapta\\elevator\\elevator.csproj",
         "projectName": "elevator",
-        "projectPath": "d:\\exams\\emapta\\elevator\\elevator.csproj",
+        "projectPath": "D:\\exams\\emapta\\elevator\\elevator.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "d:\\exams\\emapta\\elevator\\obj\\",
+        "outputPath": "D:\\exams\\emapta\\elevator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -31,18 +31,20 @@ public class Elevator
         {
             IsMoving = true;
             int destinationFloor = Requests.Dequeue();
-            Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to {destinationFloor} floor.");
-            Task.Delay(500).Wait(); 
-            
+            if(CurrentFloor != destinationFloor) Console.WriteLine($"Elevator {Id} is moving from floor {CurrentFloor} to floor {destinationFloor}.");
+            Task.Delay(2500).Wait();
+
             while (CurrentFloor != destinationFloor)
             {
                 if (CurrentFloor < destinationFloor)
+                {
                     CurrentFloor++;
+                    await Task.Delay(2500); // Simulating elevator movement delay
+                }
                 else
                     CurrentFloor--;
-
                 Console.WriteLine($"Elevator {Id} is at floor {CurrentFloor}");
-                await Task.Delay(500); // Simulating elevator movement delay
+                await Task.Delay(2500);
             }
 
             Console.WriteLine($"Elevator {Id} arrived at floor {CurrentFloor}. Passenger can enter or exit");
